@@ -1,0 +1,17 @@
+# Ignore Pharo image and changes files
+*.image
+*.changes
+*.sources
+
+# Ignore Iceberg and local folders if present
+pharo/.iceberg/
+pharo/local/
+pharo/*.log
+
+# Ignore common build folders
+**/__pycache__/
+**/build/
+**/dist/
+**/.stack-work/
+**/target/
+**/deps/
