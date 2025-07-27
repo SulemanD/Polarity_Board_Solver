@@ -1,0 +1,330 @@
+THERE_BE_DRAGONS_HERE
+Pharo cannot write to the changes file named C:\Users\sulem\Downloads\simple_tester_st\simple_tester_st\Polarity.changes.
+
+Please check that you have write permission for this file.
+
+You won't be able to save this image correctly until you fix this.
+7 June 2025 11:28:45.613 pm
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\sulem\Downloads\si...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\sulem\Downloads\si...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'the changes file named C:\Users\sulem\Downloads\simple_tester_st\simple_...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withChangesRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'C:\Users\sulem\Downloads\simple_tester_st\simple_tester_st\Polarity.chan...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>informProblemInChanges:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+		arg2: 	false
+		tmp1: 	SourceFile(C:\Users\sulem\Downloads\simple_tester_st\simple_tester_st\Pol...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\sulem\Downloads\simple_tester_st\simple_tester_st\Pha...etc...
+		tmp2: 	nil
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-07T23:28:45.583-04:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+		arg3: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-07T23:28:45.583-04:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4...etc...
+		startpc: 	a CompiledBlock: [ arg2 value: arg3 ]
+		numArgs: 	0
+		receiver: 	a WorkingSession
+
+
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-07T23:28:45.583-04:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-07T23:28:45.583-04:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-07T23:28:45.583-04:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-07T23:28:45.583-04:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+	Receiver: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ]
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	a CompiledBlock: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+...etc...
+		numArgs: 	0
+		receiver: 	a SessionManager
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withChangesRef:
+PharoFilesOpener>>informProblemInChanges:
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+PharoFilesOpener>>changesFileOrNilReadOnly:
+PharoFilesOpener>>changesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+

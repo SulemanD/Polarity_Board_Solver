@@ -1,0 +1,1 @@
+	| specs board sol passedBoard passedSpecs time nl |	specs := Dictionary 	with: 'left'->#(2 3 -1 -1 -1) 							 	with: 'right'->#(-1 -1 -1 1 -1) 								with: 'top'->#(1 -1 -1 2 1 -1) 								with: 'bottom'->#(2 -1 -1 2 -1 3).	board := #( 'LRLRTT' 'LRLRBB' 'TTTTLR' 'BBBBTT' 'LRLRBB' ).Transcript show: (Polarity solve: board with: specs).

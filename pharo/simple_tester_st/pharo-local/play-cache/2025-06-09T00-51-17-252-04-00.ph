@@ -1,0 +1,1 @@
+|board|	board := #( 'LRLRTT' 'LRLRBB' 'TTTTLR' 'BBBBTT' 'LRLRBB' ).Transcript show: ((board at: 1) at: 1)

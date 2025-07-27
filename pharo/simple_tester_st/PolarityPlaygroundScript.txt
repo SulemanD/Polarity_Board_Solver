@@ -1,0 +1,32 @@
+" 	Execute this code to run the tests. You MUST run the tests 
+	using this playground	script. Running the tests from the 
+	system browser, as you did in Lab 2, will not	work. "
+
+| t1 t2a t2b t3a t3b t4a t4b t5 log |
+
+Transcript clear.
+log := PolarityLog new.
+PolarityTest defaultTimeLimitSecs: 30. 
+
+t1  := (PolarityTest selector: #test_1_5x6).   t1  setLog: log.
+t2a	 := (PolarityTest selector: #test_2a_2x2).  t2a setLog: log.
+t2b := (PolarityTest selector: #test_2b_2x2).  t2b setLog: log.
+t3a := (PolarityTest selector: #test_3a_4x4).  t3a setLog: log.
+t3b := (PolarityTest selector: #test_3b_4x4).  t3b setLog: log.
+t4a := (PolarityTest selector: #test_4a_8x8).  t4a setLog: log.
+t4b := (PolarityTest selector: #test_4b_8x8).  t4b setLog: log.
+t5  := (PolarityTest selector: #test_5_16x16). t5  setLog: log.
+
+t1  run. Transcript show: log get_1;  cr. 
+t2a run. Transcript show: log get_2a; cr. 
+t2b run. Transcript show: log get_2b; cr. 
+t3a run. Transcript show: log get_3a; cr. 
+t3b run. Transcript show: log get_3b; cr.  
+t4a run. Transcript show: log get_4a; cr.  
+t4b run. Transcript show: log get_4b; cr.  
+t5  run. Transcript show: log get_5;  cr.  
+
+" 	This line produces a log file in the image directory that 
+	matches the Transcript output "
+'st_log.txt' asFileReference writeStreamDo: [ :stream | stream << log getAll ].
+

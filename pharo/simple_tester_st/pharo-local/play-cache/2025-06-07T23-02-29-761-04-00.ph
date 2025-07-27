@@ -1,0 +1,1 @@
+|x|x := #( '+-+-X-' '-+-+X+' 'XX+-+-' 'XX-+X+' '-+XXX-' ).Transcript show: x length. 
