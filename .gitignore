@@ -15,3 +15,25 @@ pharo/*.log
 **/.stack-work/
 **/target/
 **/deps/
+# Pharo
+pharo-local/
+
+# Rust
+target/
+**/*.rs.bk
+
+# Elixir
+/_build/
+deps/
+erl_crash.dump
+
+# Haskell
+dist/
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+*.prof
+*.aux
+*.hp
+*.eventlog
