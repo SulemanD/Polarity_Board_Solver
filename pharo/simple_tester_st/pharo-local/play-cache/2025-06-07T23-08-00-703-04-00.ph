@@ -1,1 +1,0 @@
-|height width result |Transcript clear.height:= 5.width:= 6.result:= Array new: height.1 to: height do: [:i | result at: i put: (String new: width withAll: $X) ].1 to: result size do: [:i |	|row |	row:= result at: i.	1 to: row size do: [:j |		|colm|		colm:= row at: j.		Transcript show: i asString, j asString.		Transcript cr.		  ]  ].
