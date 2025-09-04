@@ -16,6 +16,24 @@ specs = {
     "right":  [0, -1, 1, 2]
 }
 
+board = [
+    "LRTTLRTT",
+    "LRBBLRBB",
+    "TTLRTTLR",
+    "BBLRBBLR",
+    "LRTTLRTT",
+    "LRBBLRBB",
+    "TTLRTTLR",
+    "BBLRBBLR"
+]
+
+specs = {
+    "top":    [0, 4, 3, 3, -1, 3, -1, 1],
+    "bottom": [2, 2, 3, 3, 2, -1, 1, 3],
+    "left":   [-1, -1, 2, 2, 4, -1, 3, 2],
+    "right":  [-1, 1, -1, 3, 3, -1, -1, 4]
+}
+
 board_height = len(board)
 board_width = len(board[0])
 
