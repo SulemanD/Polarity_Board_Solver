@@ -22,4 +22,4 @@ Polarity Puzzle is a logic-based puzzle implemented across multiple programming 
 - `/gui-tool` – GUI tool for analyzing and solving boards efficiently
 
 ## Rules & Specs
-Full rules, constraints, and board specifications are detailed in [Rules.md](docs/Rules.md).
+Full rules, constraints, and board specifications are detailed in [Rules.md](/Rules.md).
