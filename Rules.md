@@ -19,7 +19,35 @@
 ### Output
 - 2D array of strings: '+', '-', 'X' (X repersents no magnet)
 
-### Smalltalk Specific
+### Smalltalk
 - Class: `Polarity`
 - Method: `solve: board with: specs`
-- `specs` is a Dictionary:  
+- `specs`: Dictionary with keys `'left'`, `'right'`, `'top'`, `'bottom'` and arrays of integers
+- `board`: Array of strings representing tile orientations
+- Return: Array of strings containing `+`, `-`, `X`
+
+### Elixir
+- Function: `polarity(board, specs)` in `polarity.ex`
+- `board`: Tuple of strings
+- `specs`: Map of tuples with keys `"left"`, `"right"`, `"top"`, `"bottom"`  
+  Example:
+  ```elixir
+  %{
+    "left" => {2, 3, -1, -1, -1},
+    "right" => {-1, -1, -1, 1, -1},
+    "top" => {1, -1, -1, 2, 1, -1},
+    "bottom" => {2, -1, -1, 2, -1, 3}
+  }
+Return: Tuple of strings (same format as board)
+
+### Haskell
+- Function: polarity :: [String] -> ([Int], [Int], [Int], [Int]) -> [String] in Polarity.hs
+- board: List of strings
+- specs: Tuple of lists of integers (left, right, top, bottom)
+- Return: List of strings (solved board)
+
+### Rust
+- Function: fn polarity(board: &[&str], specs: &(Vec<i32>, Vec<i32>, Vec<i32>, Vec<i32>)) -> Vec<String> in main.rs
+- board: Array of string slices (&[&str])
+- specs: Tuple of vectors of i32 (left, right, top, bottom)
+- Return: Vector of strings (solved board)
