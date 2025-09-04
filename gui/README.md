@@ -1,7 +1,7 @@
 # **Polarity Puzzle GUI**
 Purpose
 
-This GUI was created to help me solve Polarity Puzzle boards by hand. When testing potential solutions, I wanted a way to quickly mark tiles and immediately see the effect on the board and the row/column specifications. Rather than building a fully automated solver, this tool allows manual experimentation, making it easier to verify solutions and understand board behavior.
+This GUI was created to help me solve Polarity Puzzle boards by hand. When testing my original idea algorithm only solved smaller boards, I needed a way to test solutions for larger boards, wwwwwwwwwwwwI wanted a way to quickly mark tiles and immediately see the effect on the board and the row/column specifications. Rather than building a fully automated solver, this tool allows manual experimentation, making it easier to verify solutions and understand board behavior. 
 
 Features
 
